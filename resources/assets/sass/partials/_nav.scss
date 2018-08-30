@@ -1,0 +1,90 @@
+nav.navbar{
+      padding-top:0;
+      line-height: 4rem;
+}
+
+a.nav-link{
+      color: rgb(26, 26, 26) !important;
+      font-size: 16px;
+      font-weight: 600;
+
+      &:hover{
+            color:rgb(255, 134, 0) !important;
+      }
+}
+
+.parent:hover .child, .parent.hover .child { display: block; }
+
+i.fa-book{
+    color: rgb(26, 26, 26)
+}
+
+
+.navbar-brand{
+      color: $cOrange !important;
+      font-size: 2.5em;
+
+      &:hover .brand-first {
+            color:rgb(255, 134, 0);
+      }
+
+      &:hover .brand-second{
+            color: rgb(26, 26, 26) ;
+      }
+}
+
+.brand-first{
+      color: rgb(26, 26, 26);
+}
+
+.brand-second{
+ color:rgb(153, 153, 153);
+}
+
+div.nav-inner{
+      background-color: white !important;
+      box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.notifications-menu{
+      padding: 0.5rem;
+      min-width: 20rem;
+      line-height: 1.3rem;
+}
+
+
+
+//MEDIA QUERIES
+@media (max-width: 576px) {
+      .navbar-brand{
+            color: $cOrange !important;
+            font-size: 1.8rem;
+      }
+
+      header{
+            padding-left:0px;
+            padding-right:0px;
+      }
+
+       nav > div.container{
+            width: 100% !important;
+            margin:0;
+      }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 577px) and (max-width: 768px) {
+
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}

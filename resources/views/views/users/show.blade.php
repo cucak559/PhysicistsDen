@@ -1,0 +1,37 @@
+@extends('layout')
+
+@section('content')
+      <div class="header text-center">
+            <h3 class="header-text">{{ $user->name }} </h3>
+
+            @if (count($user->activity) === 1)
+                  <p>1 activity</p>
+            @elseif (count($user->activity) > 1)
+                   <p>{{ count($user->activity) }} activities</p>
+            @else
+                  <p>No activities yet.</p>
+            @endif
+      </div>
+
+      <div class="container">
+
+            @forelse  ($activities as $date => $activity)
+                  <div class="col-md-12 mb-1">
+                        <h3>{{$date}}</h3>
+                  </div>
+                  @foreach ($activity as $record)
+                        <div class="col-md-12">
+                              @if (view()->exists("views.users.activities.{$record->type}"))
+                                     @include("views.users.activities.{$record->type}",['activity' => $record])
+                              @endif
+                              <hr>
+                        </div>
+                  @endforeach
+
+           @empty
+                    <p>There is no activity for this user yet.</p>
+           @endforelse
+
+      </div>
+@endsection
+

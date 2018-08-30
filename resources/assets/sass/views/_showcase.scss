@@ -1,0 +1,81 @@
+#showcase{
+     height: 950px;
+     background: url(/../images/physics.jpg) center center no-repeat fixed;
+     background-size: cover;
+
+}
+
+#about{
+      height: 1000px;
+      padding-top:6rem;
+      padding-bottom:4rem;
+      background: $cWhite;
+}
+
+.about-out{
+     padding: 2rem;
+     height:300px !important;
+}
+
+.about{
+     padding: 2rem;
+}
+
+.about-inner{
+     background: white;
+     height:300px !important;
+     padding-top: 4rem;
+}
+
+.icons{
+      font-size: 70px;
+}
+
+.fa-book,.fa-wrench{
+      color: #3cadd4;
+}
+
+.fa-question,.fa-star{
+      color: #add43c;
+}
+
+.fa-users,.fa-plug{
+      color: #d43c61;
+}
+
+//MEDIA QUERIES
+@media (max-width: 576px) {
+      .about-out{
+            margin-bottom: 4rem;
+      }
+
+      #footer{
+            height:500px;
+      }
+
+      #about{
+            height:2600px;
+      }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 577px) and (max-width: 768px) {
+       #about{
+            height:2400px;
+      }
+
+       .about-out{
+            margin-bottom: 4rem;
+      }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
+

@@ -1,0 +1,74 @@
+#comments{
+      background-color: #efefef;
+      padding:8rem;
+
+      .comment-box{
+            background:white;
+            padding:4rem;
+      }
+
+      .comment-caption{
+            font-size: 40px;
+            font-weight: 600;
+      }
+
+      .comment-add{
+            margin-top:2rem;
+      }
+
+      .comment-input{
+            width:100%;
+      }
+
+      .form-row{
+            width:100%;
+      }
+
+      .comment-img{
+            width:100px;
+            height:100px;
+      }
+
+      .comment-date{
+            margin-left: 0.5rem;
+            font-style: italic;
+      }
+
+      .comment-username{
+            font-weight:600;
+      }
+
+}
+
+//MEDIA QUERIES
+@media (max-width: 576px) {
+      #comments{
+            padding:3rem;
+
+            .comment-box{
+                  padding:0;
+                  background-color: #efefef;
+            }
+
+
+      }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 577px) and (max-width: 768px) {
+      #comments{
+            padding:4rem;
+      }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+       #comments{
+            padding:5rem;
+      }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}

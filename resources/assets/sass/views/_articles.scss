@@ -1,0 +1,224 @@
+.article-topic{
+      font-size: 0.8rem;
+}
+
+.article-card{
+      img{
+            width: 360px;
+            height: 200px;
+      }
+
+      .article-topic{
+            padding-top: 0.5rem;
+      }
+
+      .article-topic a{
+            color: rgb(255, 134, 0);
+            letter-spacing: 3.15px;
+            font-size: 10px;
+            font-weight: 600;
+
+            &:hover {
+                  color: rgb(26, 26, 26) ;
+            }
+      }
+
+      .article-name{
+            font-size: 18px;
+            font-weight: 600;
+      }
+
+      .article-name a{
+            color: rgb(26, 26, 26);
+      }
+
+      .owner-by{
+            color: rgb(107, 107, 107);
+            font-size: 12px;
+            font-weight: 600;
+      }
+
+      .owner-name{
+            color: rgb(153, 153, 153);
+            letter-spacing: 1.8px;
+            font-size: 10px;
+      }
+
+      .article-description{
+            font-size: 13px;
+            color: rgb(153, 153, 153);
+      }
+}
+
+.topic-title a{
+      color: rgb(255, 134, 0);
+
+      letter-spacing: 3.15px;
+      font-size: 11px;
+      font-weight: 600;
+
+      &:hover {
+            color: rgb(26, 26, 26) ;
+      }
+}
+
+.article-text{
+      padding-top: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      color: rgb(26, 26, 26);
+      font-weight:500;
+      font-size:16px;
+      line-height:38px;
+      word-break:break-word;
+
+      &::first-letter {
+            color:black;
+            font-size:40px;
+            font-weight:800;
+      }
+}
+
+.article-author{
+      padding-top:10rem;
+
+      .article-username{
+            font-size:18px;
+            color:rgb(26, 26, 26);
+            font-weight:600;
+            margin-top:1rem;
+      }
+
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-date{
+      font-weight:400px;
+      font-size:10px;
+      font-style:italic;
+}
+
+.article-tag{
+      background-color: #efefef;
+      padding:0.2rem;
+      color:rgb(26, 26, 26);
+}
+
+.article-tag:hover span {
+      color: rgb(255, 134, 0);
+}
+
+.article-rating{
+      padding-top:10rem;
+
+      .rate-caption{
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(26, 26, 26);
+            line-height: 22.5px;
+      }
+
+      .article-r-buttons i{
+            font-size: 20px;
+            padding:10px;
+            border: 1px solid black;
+            border-radius: 100%;
+
+            &:hover {
+                  color: rgb(255, 134, 0);
+                  border-color:rgb(255, 134, 0);
+            }
+      }
+}
+
+button[type="submit"].icon-button{
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding:0;
+}
+
+.article-crud-buttons i{
+      color:black;
+
+       &:hover {
+                  color: rgb(255, 134, 0);
+                  border-color:rgb(255, 134, 0);
+      }
+}
+
+//MEDIA QUERIES
+@media (max-width: 576px) {
+      .article-rating{
+             padding-top:4rem;
+
+            .rate-caption{
+                  font-size: 14px;
+            }
+
+            .article-r-buttons i{
+                  font-size: 20px;
+                  padding:8px;
+            }
+
+      }
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 577px) and (max-width: 768px) {
+       .article-rating{
+
+            .rate-caption{
+                  font-size: 10px;
+            }
+
+            .article-r-buttons i{
+                  font-size: 10px;
+                  padding:4px;
+            }
+
+      }
+
+      .article-author{
+            padding-top:4rem;
+      }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+        .article-rating{
+
+            .rate-caption{
+                  font-size: 10px;
+            }
+
+            .article-r-buttons i{
+                  font-size: 14px;
+                  padding:5px;
+            }
+
+      }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 993px) and (max-width: 1200px) {
+       .article-rating{
+
+            .rate-caption{
+                  font-size: 12px;
+            }
+
+            .article-r-buttons i{
+                  font-size: 14px;
+                  padding:6px;
+            }
+
+      }
+}

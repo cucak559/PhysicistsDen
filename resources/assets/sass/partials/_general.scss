@@ -1,0 +1,71 @@
+html {
+  position: relative;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+[v-cloak]{
+      display: none;
+}
+
+body{
+      font-family: 'Montserrat', sans-serif;
+      //margin-top: 4.7rem;
+      margin-bottom: 400px;
+}
+
+img{
+      max-width : 100%;
+}
+
+.active-button{
+      color: rgb(255, 134, 0) !important;
+
+       &:hover {
+            color: black;
+      }
+
+}
+
+button a:hover{
+      color: white
+}
+
+.inline{
+      display: inline;
+}
+
+.white{
+      color: white;
+}
+
+a{
+      text-decoration: none !important;
+}
+
+.full-width{
+      width:100% !important;
+}
+
+
+//MEDIA QUERIES
+@media (max-width: 576px) {
+      body{
+             margin-bottom:500px;
+      }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
