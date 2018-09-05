@@ -4,8 +4,8 @@
 
             <div class="col-auto">
                 <img class="comment-img img-fluid"
-                     src="http://theadvertplace.com/wp-content/themes/classified/img/placeholder/blogpost-placeholder-100x100.png"
-                     alt="Profile Pic">
+                     src="{{ asset('storage/'.$user->avatar_path) }}"
+                     alt="Profile Pic" height="100" width="100">
             </div>
 
             <div class="col">

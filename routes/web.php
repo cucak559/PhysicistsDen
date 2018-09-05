@@ -88,6 +88,7 @@ Route::get('/user/{user}', 'UserController@show');
 //API Routes
 Route::get('/api/users', 'Api\UsersController@index');
 Route::get('/api/user/notifications', 'Api\UserNotificationsController@index');
+Route::post('/api/users/{user}/avatar', 'Api\UserAvatarController@store');
 Route::delete('/api/user/notifications/{notification}', 'Api\UserNotificationsController@destroy');
 
 

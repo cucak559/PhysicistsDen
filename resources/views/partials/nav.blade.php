@@ -59,6 +59,10 @@
                                       </a>
 
                                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="/user/{{ auth()->user()->id }}">
+                                              <i class="fas fa-male profile-icon mr-1"></i> My profile
+                                          </a>
+
                                           <a class="dropdown-item" href="/groups">
                                             <i class="fas fa-users"></i> My groups
                                           </a>
