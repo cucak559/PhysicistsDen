@@ -2,7 +2,6 @@
 
 namespace App;
 
-use App\Group;
 use Illuminate\Database\Eloquent\Model;
 
 class Aplicant extends Model

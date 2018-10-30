@@ -70095,7 +70095,150 @@ webpackContext.id = 186;
 /* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function(){},staticRenderFns:[]}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "card comment-card mt-4 mb-4" }, [
+    _c("div", { staticClass: "row" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "card-block px-2" }, [
+          _c("div", { staticClass: "card-title comment-meta" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-sm-6" }, [
+                _c("span", {
+                  staticClass: "comment-username",
+                  domProps: { textContent: _vm._s(_vm.data.user.name) }
+                }),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "comment-date",
+                  domProps: { textContent: _vm._s(_vm.ago) }
+                })
+              ]),
+              _vm._v(" "),
+              _vm.isOwner
+                ? _c("div", { staticClass: "col-sm-6 text-right" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "icon-button",
+                        attrs: { type: "button" },
+                        on: {
+                          click: function($event) {
+                            _vm.editing = !_vm.editing
+                          }
+                        }
+                      },
+                      [_c("i", { staticClass: "far fa-edit mr-2" })]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "icon-button",
+                        attrs: { type: "submit" },
+                        on: {
+                          click: function($event) {
+                            _vm.remove()
+                          }
+                        }
+                      },
+                      [_c("i", { staticClass: "fas fa-trash mr-2" })]
+                    )
+                  ])
+                : _vm._e()
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-text comment-body" }, [
+            _vm.editing
+              ? _c("div", { staticClass: "mt-3" }, [
+                  _c(
+                    "form",
+                    {
+                      on: {
+                        submit: function($event) {
+                          $event.preventDefault()
+                          return _vm.update($event)
+                        }
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-sm-9" }, [
+                          _c("textarea", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.body,
+                                expression: "body"
+                              }
+                            ],
+                            attrs: { name: "body", required: "" },
+                            domProps: { value: _vm.body },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.body = $event.target.value
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _vm._m(1)
+                      ])
+                    ]
+                  )
+                ])
+              : _vm._e()
+          ]),
+          _vm._v(" "),
+          !_vm.editing
+            ? _c("div", { domProps: { innerHTML: _vm._s(_vm.body) } })
+            : _vm._e()
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-auto" }, [
+      _c("img", {
+        staticClass: "comment-img img-fluid",
+        attrs: {
+          src: "//placehold.it/200",
+          alt: "Profile Pic",
+          height: "100",
+          width: "100"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-3 text-right" }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-outline-success", attrs: { type: "submit" } },
+        [_vm._v("Update\n                                    ")]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {

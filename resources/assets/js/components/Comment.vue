@@ -4,7 +4,7 @@
 
             <div class="col-auto">
                 <img class="comment-img img-fluid"
-                     src="{{ asset('storage/'.$user->avatar_path) }}"
+                     src="//placehold.it/200"
                      alt="Profile Pic" height="100" width="100">
             </div>
 

@@ -12,17 +12,17 @@
             <p>No activities yet.</p>
         @endif
 
-        @can('update',$user)
-            <form method="POST" action="/api/users/{{ $user->id }}/avatar" enctype="multipart/form-data">
-                @csrf
+        {{--@can('update',$user)--}}
+            {{--<form method="POST" action="/api/users/{{ $user->id }}/avatar" enctype="multipart/form-data">--}}
+                {{--@csrf--}}
 
-                <input type="file" name="avatar" id="avatar">
-                <button type="submit" class="btn btn-outline-secondary">Add Avatar</button>
-            </form>
+                {{--<input type="file" name="avatar" id="avatar">--}}
+                {{--<button type="submit" class="btn btn-outline-secondary">Add Avatar</button>--}}
+            {{--</form>--}}
 
-        @endcan
+        {{--@endcan--}}
 
-        <img src="{{ asset('storage/'.$user->avatar_path) }}" alt="Profile Pic" width="200" height="200">
+        {{--<img src="{{ asset('storage/'.$user->avatar_path) }}" alt="Profile Pic" width="200" height="200">--}}
     </div>
 
     <div class="container">
