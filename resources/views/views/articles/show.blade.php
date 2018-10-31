@@ -32,11 +32,7 @@
                         <hr>
 
                         <div class="text-center">
-                            @foreach ($article->tags as $tag)
-                                <a class="article-tag" href="/articles/bytag/{{ $tag->tag_id }}">
-                                    <span>{{$tag->name}}</span>
-                                </a>
-                            @endforeach
+
                         </div>
 
                         <hr>

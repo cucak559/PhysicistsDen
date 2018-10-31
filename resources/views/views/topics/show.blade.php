@@ -65,14 +65,6 @@
                                     <p class="card-text article-description mt-2">
                                         {{ $article->description }}
                                     </p>
-
-                                    <p>
-                                        Tags:
-                                        @foreach ($article->tags as $tag)
-                                            <a href="/articles/bytag/{{ $tag->tag_id }}"><span>{{ $tag->name}}</span></a>
-                                        @endforeach
-                                    </p>
-
                                 </div>
                             </div>
                         </div>
