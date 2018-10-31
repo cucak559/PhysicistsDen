@@ -1,7 +1,7 @@
 # PhysicistsDen
 Simple project in Vue and Laravel
 <br />
----Requirements---
+---Requirements---<br /><br />
 1.Composer - https://getcomposer.org/download/ <br />
 After downloading composer, download laravel via composer from command line. <br />
 2.Laravel - composer global require laravel/installer <br />
